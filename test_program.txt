@@ -1,0 +1,12 @@
+From program Import hello
+import pdb; pdb.set_trace()
+import unittest
+from my_function import greet
+class TestFunctions(unittest.TestCase):
+
+    def testGreet(self):
+        result = greet(“hello”)
+        self.assertTrue(result == “goodbye”)
+
+if __name__ == '__main__':
+  unittest.main()
